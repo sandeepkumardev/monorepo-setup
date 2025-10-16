@@ -1,0 +1,13 @@
+.next
+build
+dist
+node_modules
+.env
+
+packages/db/seed.ts
+packages/db/generated
+
+sw.js
+workbox-*.js
+
+next-env.d.ts

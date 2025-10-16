@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ws/utils/*": ["packages/utils/src/*"],
+      "@ws/db": ["packages/db/generated/prisma"]
+    }
+  }
+}

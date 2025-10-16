@@ -1,0 +1,29 @@
+{
+  "name": "temple-repo",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "generate": "pnpm --filter @ws/db generate",
+    "build:server": "pnpm ts-patch install && pnpm --filter @ws/utils build && pnpm --filter server build",
+    "build:client": "pnpm --filter client build",
+    "dev:server": "pnpm --filter server dev",
+    "dev:client": "pnpm --filter client dev",
+    "start:server": "pnpm --filter server start",
+    "start:client": "pnpm --filter client start",
+    "format": "biome check --write --unsafe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "@biomejs/biome": "2.2.5",
+    "ts-patch": "^3.3.0",
+    "typescript": "^5.9.3",
+    "typescript-transform-paths": "^3.5.5"
+  }
+}

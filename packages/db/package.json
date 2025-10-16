@@ -1,0 +1,17 @@
+{
+  "name": "@ws/db",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "generate": "npx prisma generate && npx prisma db push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "dependencies": {
+    "@prisma/client": "6.15.0",
+    "prisma": "6.15.0"
+  }
+}
