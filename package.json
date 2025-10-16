@@ -1,5 +1,5 @@
 {
-  "name": "temple-repo",
+  "name": "monorepo",
   "version": "1.0.0",
   "description": "",
   "workspaces": [
